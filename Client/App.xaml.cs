@@ -13,5 +13,17 @@ namespace Client
     /// </summary>
     public partial class App : Application
     {
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            try
+            {
+                new MainWindow().Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to establish a connection to 127.0.0.1:3305");
+                Application.Current.Shutdown();
+            }
+        }
     }
 }

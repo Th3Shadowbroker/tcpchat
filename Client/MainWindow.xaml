@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Client" Height="448.852" Width="437.245" ResizeMode="NoResize">
     <Grid>
-        
+        <RichTextBox x:Name="ChatHistory" HorizontalAlignment="Left" Height="353" Margin="10,10,0,0" VerticalAlignment="Top" Width="409" IsReadOnly="True"/>
+        <TextBox x:Name="Message" HorizontalAlignment="Left" Height="23" Margin="10,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="294"/>
+        <Button x:Name="SendBtn" Content="Send" HorizontalAlignment="Left" Margin="319,385,0,0" VerticalAlignment="Top" Width="100" Height="23" Click="SendBtn_Click"/>
+
     </Grid>
 </Window>
